@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    color: hsl(0, 6%, 24%);
+    text-align: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    background: hsl(0, 36%, 70%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: hsl(0, 93%, 68%);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content{
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#Image {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+header p {
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: hsl(0, 80%, 86%);
+    color: hsl(0, 74%, 74%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    body {
+        background-image: url('shopping-mobile.jpg');
+    }
+    
+    .content {
+        display: none;
+
+    }
+    
+     input[type="email"] {
+        width: 300px;
+        padding: 20px 30px;
+    }
+
+    button[type="submit"] {
+        width: 300px;
+        padding: 20px 30px;
+    }
+
+}
+
+    @media (max-width: 400px) {
+        body {
+            background-image: url('shopping-mobile.jpg');
+        }
+        
+        .content {
+            display: none;
+    
+        }
+        
+         input[type="email"] {
+            width: 95%;
+            padding: 20px 30px;
+        }
+    
+        button[type="submit"] {
+            width: 95%;
+            padding: 20px 30px;
+        }
+
+}
