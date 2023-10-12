@@ -12,9 +12,12 @@
             <h1>We're Coming Soon</h1>
             <p>The page will be launched soon.</p>
         </header>
-        <section class="content">
-            <img src="Shopping-desktop.jpg" alt="Image" id="Image">
-        </section>
+        <div class="image-container">
+            <picture>
+                <source media="(max-width: 700px)" srcset="shopping-mobile.jpg">
+                <img src="shopping-desktop.jpg" alt="Image" id="Image">
+            </picture>
+        </div>
             <form>
                 <input type="email" placeholder="Enter your email" required>
                 <button type="submit">Register</button>

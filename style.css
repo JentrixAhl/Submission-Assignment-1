@@ -38,13 +38,14 @@ header h1 {
 }
 
 .content{
+    width: 100px;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
 }
 
 #Image {
-    width: 400px;
+    width: 300px;
     height: auto;
     margin: 0 auto;
 }
@@ -68,15 +69,25 @@ input[type="email"] {
 
 button[type="submit"] {
     background: hsl(0, 80%, 86%);
-    color: hsl(0, 74%, 74%);
+    color: hsl(251, 100%, 49%);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.image-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+
 @media (max-width: 700px) {
-    body {
-        background-image: url('shopping-mobile.jpg');
+    #Image {
+        content: url('shopping-mobile.jpg');
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
     
     .content {
@@ -97,8 +108,11 @@ button[type="submit"] {
 }
 
     @media (max-width: 400px) {
-        body {
-            background-image: url('shopping-mobile.jpg');
+        #Image {
+            content: url('shopping-mobile.jpg');
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
         }
         
         .content {
